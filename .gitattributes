@@ -1,0 +1,34 @@
+# Auto detect text files and perform LF normalization
+*               text=auto
+
+#
+# The above will handle all files NOT found below
+#
+
+# Source code
+*.md            text diff=markdown
+*.css           text diff=css
+*.htm           text diff=html
+*.html          text diff=html
+*.js            text
+*.mjs           text
+*.cjs           text
+*.json          text
+*.xhtml         text diff=html
+
+# Documentation
+license         text
+LICENSE         text
+readme          text
+*README*        text
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore       text
+
+#
+# Exclude files from exporting
+#
+
+.gitattributes export-ignore
+.gitignore     export-ignore
+.gitkeep       export-ignore
